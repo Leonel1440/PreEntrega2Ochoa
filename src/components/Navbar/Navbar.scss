@@ -1,6 +1,6 @@
 
 .header {
-    background-color: rgb(80, 88, 153);
+    background-color: rgb(223, 178, 30);
     .header__container{
         max-width: 900px;
         margin: 0 auto;
@@ -13,10 +13,16 @@
         .header__logo{
             color: white;
             font-weight: 702;
-            font-size: 42px;
+            font-size: 50px;
             width: 120px;
+            
         }
-
+        #img-logo{
+            
+                width: 100px;
+                height: 100px;
+            
+        }
         .navbar {
             display: flex;
             justify-content: center;
@@ -26,6 +32,7 @@
                 color: white;
                 margin: 0;
                 font-size: 18px;
+                font-weight: 800;
                 margin-right: 20px;
              }
         }
