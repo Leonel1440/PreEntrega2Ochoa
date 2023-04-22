@@ -1,7 +1,4 @@
 
-
-
-
 import Item from "../Item/Item"
 
 
@@ -20,4 +17,4 @@ const ItemList = ( {items} ) => {
     )
 }
 
-export default ItemList 
+export default ItemList
