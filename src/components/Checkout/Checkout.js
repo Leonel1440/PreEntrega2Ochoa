@@ -60,14 +60,6 @@ const Checkout = () => {
             const { id } = await addDoc(ordersRef, orden)
             setOrderId(id)
             vaciarCarrito()
-            // batch.commit()
-            //     .then(() => {
-            //         addDoc(ordersRef, orden)
-            //             .then((doc) => {
-            //                 setOrderId(doc.id)
-            //                 vaciarCarrito()
-            //             })
-            //     })
         } else {
             alert("Hay items sin stock: " + outOfStock.map(i => i.name).join(', '))
         }

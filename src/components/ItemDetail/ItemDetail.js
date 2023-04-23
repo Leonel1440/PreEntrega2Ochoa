@@ -27,8 +27,6 @@ const ItemDetail = ({item}) => {
             {item.stock <= 5 && <p><strong>Quedan sólo {item.stock} unidades!</strong></p>}
             <p>Precio: ${item.price}</p>
 
-            {/* <p>Fecha de montaje: {fechaMontaje.toLocaleString()}</p>
-            <Memo /> */}
 
             {
                 isInCart(item.id)
@@ -47,18 +45,3 @@ const ItemDetail = ({item}) => {
 
 export default ItemDetail
 
-
-// const ItemDetail = ({item}) => {
-
-//     return (
-//         <div>
-//             <h2>{item.name}</h2>
-//             <hr/>
-//             <img src={item.img} alt={item.name}/>
-//             {/* <p>{item.description}</p> */}
-//             <p>Precio: ${item.price}</p>
-//         </div>
-//     )
-// }
-
-// export default ItemDetail

@@ -20,14 +20,4 @@ const ItemListContainer = () => {
 
 export default ItemListContainer
 
-//key= si o si lo tiene que tener, es un control interno de React para optimizar la lectura del listado
 
-
-    // const promesa = new Promise((resolve, reject) =>{
-    //     setTimeout(() =>{
-    //         resolve("Promesa resuelta")
-            
-    //     }, 2000)//ahora es asincronico, se resolverá 2 segundos después
-    // })
-//con el .then, la promesa se ejecuta cuando es resuelta
-    

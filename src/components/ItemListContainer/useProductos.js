@@ -12,12 +12,10 @@ const useProductos = () => {
     useEffect(() => {
         setLoading(true)
 
-        // 1.- armar una referencia (sync)
         const productosRef = collection(db, "productos")
         const q = categoryId 
                     ? query(productosRef, where("category", "==", categoryId))
                     : productosRef
-        // 2.- llamar a esa referencia (async)
         getDocs(q)
             .then((res) => {
                 setProductos( res.docs.map((doc) => {
